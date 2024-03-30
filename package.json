@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "brevmakesjupyterlookbetter",
   "version": "0.1.0",
   "description": "brev.dev's dark and light mode theme",

@@ -12,7 +12,7 @@ brev.dev's dark and light mode theme
 To install the extension, execute:
 
 ```bash
-pip install brevmakesjupyterlookbetter
+`pip install brevmakesjupyterlookbetter`
 ```
 
 ## Uninstall
