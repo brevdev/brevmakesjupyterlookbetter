@@ -4,7 +4,6 @@ import {
 } from '@jupyterlab/application';
 
 import { IThemeManager } from '@jupyterlab/apputils';
-import '../style/Jupyter-Dark.css';
 
 /**
  * Initialization data for the brevmakesjupyterlookbetter extension.
@@ -15,14 +14,12 @@ const plugin: JupyterFrontEndPlugin<void> = {
   autoStart: true,
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    console.log(
-      'JupyterLab extension brevmakesjupyterlookbetter is activated!'
-    );
+    console.log('🤙🤙🤙');
     const style = 'brevmakesjupyterlookbetter/index.css';
 
     manager.register({
       name: 'brevmakesjupyterlookbetter',
-      isLight: true,
+      isLight: false,
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
     });
