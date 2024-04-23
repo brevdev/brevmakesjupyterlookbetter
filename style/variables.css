@@ -9,7 +9,7 @@
 
   /* The dark theme shadows need a bit of work, but this will probably also require work on the core layout
    * colors used in the theme as well. */
-  --jp-shadow-base-lightness: 32;
+  /* --jp-shadow-base-lightness: 32; */
   --jp-shadow-umbra-color: rgba(
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
@@ -63,11 +63,15 @@
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--md-grey-700, #616161);
+  --jp-border-color0: var(--md-grey-400);
+  --jp-border-color1: var(--md-grey-400);
+  --jp-border-color2: var(--md-grey-300);
+  --jp-border-color3: var(--md-grey-200);
+  /* --jp-border-color0: var(--md-grey-700, #616161);
   --jp-border-color1: var(--md-grey-700, #616161);
   --jp-border-color2: var(--md-grey-800, #424242);
   --jp-border-color3: var(--md-grey-900, #212121);
-  --jp-inverse-border-color: var(--md-grey-600, #757575);
+  --jp-inverse-border-color: var(--md-grey-600, #757575); */
   --jp-border-radius: 2px;
 
   /* UI Fonts
@@ -85,9 +89,11 @@
   --jp-ui-font-size1: 13px; /* Base font size */
   --jp-ui-font-size2: 1.2em;
   --jp-ui-font-size3: 1.44em;
-  --jp-ui-font-family: system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI',
+  --jp-ui-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica,
+  arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  /* --jp-ui-font-family: system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI',
     helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+    'Segoe UI Symbol'; */
 
   /*
    * Use these font colors against the corresponding main layout colors.
@@ -95,20 +101,28 @@
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(255, 255, 255, 1);
+  --jp-ui-font-color0: rgba(0, 0, 0, 1);
+  --jp-ui-font-color1: rgba(0, 0, 0, 0.87);
+  --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
+  --jp-ui-font-color3: rgba(0, 0, 0, 0.38);
+  /* --jp-ui-font-color0: rgba(255, 255, 255, 1);
   --jp-ui-font-color1: rgba(255, 255, 255, 0.87);
   --jp-ui-font-color2: rgba(255, 255, 255, 0.54);
-  --jp-ui-font-color3: rgba(255, 255, 255, 0.38);
+  --jp-ui-font-color3: rgba(255, 255, 255, 0.38); */
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
-
-  --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
+   
+   --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
+   --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
+   --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
+   --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
+  /* --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
   --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
   --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
-  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
+  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3); */
 
   /* Content Fonts
    *
@@ -136,7 +150,15 @@
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(255, 255, 255, 1);
+  --jp-content-font-color0: rgba(0, 0, 0, 1);
+  --jp-content-font-color1: rgba(0, 0, 0, 0.87);
+  --jp-content-font-color2: rgba(0, 0, 0, 0.54);
+  --jp-content-font-color3: rgba(0, 0, 0, 0.38);
+  --jp-content-link-color: var(--md-blue-700);
+  --jp-content-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI',
+    helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  /* --jp-content-font-color0: rgba(255, 255, 255, 1);
   --jp-content-font-color1: rgba(255, 255, 255, 1);
   --jp-content-font-color2: rgba(255, 255, 255, 0.7);
   --jp-content-font-color3: rgba(255, 255, 255, 0.5);
@@ -145,7 +167,7 @@
   --jp-content-link-hover-color: var(--md-blue-400, #42a5f5);
   --jp-content-font-family: system-ui, -apple-system, blinkmacsystemfont,
     'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol';
+    'Segoe UI Emoji', 'Segoe UI Symbol'; */
 
   /*
    * Code Fonts
@@ -172,28 +194,43 @@
    * The following are the main layout colors use in JupyterLab. In a light
    * theme these would go from light to dark.
    */
-
-  --jp-layout-color0: #111;
+   --jp-layout-color0: white;
+  --jp-layout-color1: white;
+  --jp-layout-color2: var(--md-grey-200);
+  --jp-layout-color3: var(--md-grey-400);
+  --jp-layout-color4: var(--md-grey-600);
+  /* --jp-layout-color0: #111;
   --jp-layout-color1: var(--md-grey-900, #212121);
   --jp-layout-color2: var(--md-grey-800, #424242);
   --jp-layout-color3: var(--md-grey-700, #616161);
-  --jp-layout-color4: var(--md-grey-600, #757575);
+  --jp-layout-color4: var(--md-grey-600, #757575); */
 
   /* Inverse Layout
    *
    * The following are the inverse layout colors use in JupyterLab. In a light
    * theme these would go from dark to light.
    */
-
-  --jp-inverse-layout-color0: white;
+  --jp-inverse-layout-color0: #111;
+  --jp-inverse-layout-color1: var(--md-grey-900);
+  --jp-inverse-layout-color2: var(--md-grey-800);
+  --jp-inverse-layout-color3: var(--md-grey-700);
+  --jp-inverse-layout-color4: var(--md-grey-600);
+  /* --jp-inverse-layout-color0: white;
   --jp-inverse-layout-color1: white;
   --jp-inverse-layout-color2: var(--md-grey-200, #eee);
   --jp-inverse-layout-color3: var(--md-grey-400, #bdbdbd);
-  --jp-inverse-layout-color4: var(--md-grey-600, #757575);
+  --jp-inverse-layout-color4: var(--md-grey-600, #757575); */
 
   /* Brand/accent */
-
-  --jp-brand-color0: var(--md-blue-700, #1976d2);
+  --jp-brand-color0: #ec0c4b;
+  --jp-brand-color1: #00BCD4;
+  --jp-brand-color2: #ee376b;
+  --jp-brand-color3: #ee3b6e;
+  --jp-accent-color0: var(--md-green-700);
+  --jp-accent-color1: var(--md-green-500);
+  --jp-accent-color2: var(--md-green-300);
+  --jp-accent-color3: var(--md-green-100);
+  /* --jp-brand-color0: var(--md-blue-700, #1976d2);
   --jp-brand-color1: var(--md-blue-500, #2196f3);
   --jp-brand-color2: var(--md-blue-300, #64b5f6);
   --jp-brand-color3: var(--md-blue-100, #bbdefb);
@@ -201,11 +238,26 @@
   --jp-accent-color0: var(--md-green-700, #388e3c);
   --jp-accent-color1: var(--md-green-500, #4caf50);
   --jp-accent-color2: var(--md-green-300, #81c784);
-  --jp-accent-color3: var(--md-green-100, #c8e6c9);
+  --jp-accent-color3: var(--md-green-100, #c8e6c9); */
 
   /* State colors (warn, error, success, info) */
-
-  --jp-warn-color0: var(--md-orange-700, #f57c00);
+  --jp-warn-color0: var(--md-orange-700);
+  --jp-warn-color1: var(--md-orange-500);
+  --jp-warn-color2: var(--md-orange-300);
+  --jp-warn-color3: var(--md-orange-100);
+  --jp-error-color0: var(--md-red-700);
+  --jp-error-color1: var(--md-red-500);
+  --jp-error-color2: var(--md-red-300);
+  --jp-error-color3: var(--md-red-100);
+  --jp-success-color0: var(--md-green-700);
+  --jp-success-color1: var(--md-green-500);
+  --jp-success-color2: var(--md-green-300);
+  --jp-success-color3: var(--md-green-100);
+  --jp-info-color0: var(--md-cyan-700);
+  --jp-info-color1: var(--md-cyan-500);
+  --jp-info-color2: var(--md-cyan-300);
+  --jp-info-color3: var(--md-cyan-100);
+  /* --jp-warn-color0: var(--md-orange-700, #f57c00);
   --jp-warn-color1: var(--md-orange-500, #ff9800);
   --jp-warn-color2: var(--md-orange-300, #ffb74d);
   --jp-warn-color3: var(--md-orange-100, #ffe0b2);
@@ -220,7 +272,7 @@
   --jp-info-color0: var(--md-cyan-700, #0097a7);
   --jp-info-color1: var(--md-cyan-500, #00bcd4);
   --jp-info-color2: var(--md-cyan-300, #4dd0e1);
-  --jp-info-color3: var(--md-cyan-100, #b2ebf2);
+  --jp-info-color3: var(--md-cyan-100, #b2ebf2); */
 
   /* Cell specific styles */
 
@@ -228,17 +280,23 @@
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-  --jp-cell-editor-background: var(--jp-layout-color1);
+  --jp-cell-editor-background: var(--md-grey-100);
+  --jp-cell-editor-border-color: var(--md-grey-300);
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
+  /* --jp-cell-editor-background: var(--jp-layout-color1);
   --jp-cell-editor-border-color: var(--md-grey-700, #616161);
-  --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300, #64b5f6);
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300, #64b5f6); */
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
   --jp-cell-prompt-width: 64px;
-  --jp-cell-prompt-font-family: var(--jp-code-font-family-default);
+  /* --jp-cell-prompt-font-family: var(--jp-code-font-family-default); */
+  --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
-  --jp-cell-prompt-not-active-opacity: 1;
-  --jp-cell-prompt-not-active-font-color: var(--md-grey-300, #e0e0e0);
+  --jp-cell-prompt-not-active-opacity: 0.5;
+  --jp-cell-prompt-not-active-font-color: var(--md-grey-700);
+  /* --jp-cell-prompt-not-active-opacity: 1;
+  --jp-cell-prompt-not-active-font-color: var(--md-grey-300, #e0e0e0); */
 
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
@@ -252,7 +310,8 @@
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: rgba(33, 150, 243, 0.24);
+  --jp-notebook-multiselected-color: var(--md-blue-50);
+  /* --jp-notebook-multiselected-color: rgba(33, 150, 243, 0.24); */
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -266,14 +325,17 @@
   );
 
   /* Rendermime styles */
-
-  --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
+  --jp-rendermime-error-background: #fdd;
+  --jp-rendermime-table-row-background: var(--md-grey-100);
+  --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
+  /* --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
   --jp-rendermime-table-row-background: var(--md-grey-900, #212121);
-  --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2);
+  --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2); */
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: rgba(0, 0, 0, 0.6);
+  --jp-dialog-background: rgba(0, 0, 0, 0.25);
+  /* --jp-dialog-background: rgba(0, 0, 0, 0.6); */
 
   /* Console specific styles */
 
@@ -281,10 +343,12 @@
 
   /* Toolbar specific styles */
 
-  --jp-toolbar-border-color: var(--jp-border-color2);
+  --jp-toolbar-border-color: var(--jp-border-color1);
+  /* --jp-toolbar-border-color: var(--jp-border-color2); */
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: var(--jp-layout-color1);
-  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24);
+  /* --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8); */
   --jp-toolbar-header-margin: 4px 4px 0 4px;
   --jp-toolbar-active-background: var(--jp-layout-color0);
 
@@ -293,14 +357,18 @@
   --jp-statusbar-height: 24px;
 
   /* Input field styles */
-
-  --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300, #64b5f6);
+  --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
+  --jp-input-active-background: var(--jp-layout-color1);
+  --jp-input-hover-background: var(--jp-layout-color1);
+  --jp-input-background: var(--md-grey-100);
+  --jp-input-border-color: var(--jp-border-color1);
+  /* --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300, #64b5f6);
   --jp-input-active-background: var(--jp-layout-color0);
   --jp-input-hover-background: var(--jp-layout-color2);
   --jp-input-background: var(--md-grey-800, #424242);
   --jp-input-border-color: var(--jp-inverse-border-color);
   --jp-input-active-border-color: var(--jp-brand-color1);
-  --jp-input-active-box-shadow-color: rgba(19, 124, 189, 0.3);
+  --jp-input-active-box-shadow-color: rgba(19, 124, 189, 0.3); */
 
   /* General editor styles */
 
@@ -351,7 +419,8 @@
 
   /* Vega extension styles */
 
-  --jp-vega-background: var(--md-grey-400, #bdbdbd);
+  /* --jp-vega-background: var(--md-grey-400, #bdbdbd); */
+  --jp-vega-background: white;
 
   /* Sidebar-related styles */
 
@@ -385,7 +454,7 @@
   /* Icon colors that work well with light or dark backgrounds */
   --jp-icon-contrast-color0: var(--md-purple-600, #8e24aa);
   --jp-icon-contrast-color1: var(--md-green-600, #43a047);
-  --jp-icon-contrast-color2: var(--md-pink-600, #d81b60);
+  --jp-icon-contrast-color2: var(--md-cyan-500, #00BCD4);
   --jp-icon-contrast-color3: var(--md-blue-600, #1e88e5);
 
   /* Button colors */
@@ -404,10 +473,10 @@
   --jp-notebook-icon-color: #f37626;
   --jp-json-icon-color: var(--md-orange-500, #ff9800);
   --jp-console-icon-background-color: var(--md-blue-500, #2196f3);
-  --jp-console-icon-color: white;
+  --jp-console-icon-color: white; 
   --jp-terminal-icon-background-color: var(--md-grey-200, #eee);
   --jp-terminal-icon-color: var(--md-grey-800, #424242);
-  --jp-text-editor-icon-color: var(--md-grey-200, #eee);
+  --jp-text-editor-icon-color: var(--md-grey-500, #eee);
   --jp-inspector-icon-color: var(--md-grey-200, #eee);
   --jp-switch-color: var(--md-grey-400, #bdbdbd);
   --jp-switch-true-position-color: var(--md-orange-700, #f57c00);

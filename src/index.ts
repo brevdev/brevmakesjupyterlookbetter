@@ -29,7 +29,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     manager.register({
       name: 'brevmakesjupyterlookbetter',
-      isLight: false,
+      isLight: true,
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
     });
