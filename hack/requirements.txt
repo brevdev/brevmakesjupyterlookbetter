@@ -10,8 +10,6 @@ anyio==4.3.0
     # via
     #   httpx
     #   jupyter-server
-appnope==0.1.4
-    # via ipykernel
 argon2-cffi==23.1.0
     # via jupyter-server
 argon2-cffi-bindings==21.2.0
@@ -200,7 +198,7 @@ referencing==0.34.0
     #   jsonschema
     #   jsonschema-specifications
     #   jupyter-events
-requests==2.31.0
+requests==2.32.0
     # via jupyterlab-server
 rfc3339-validator==0.1.4
     # via
