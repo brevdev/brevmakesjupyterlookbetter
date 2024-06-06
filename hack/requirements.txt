@@ -10,8 +10,6 @@ anyio==4.3.0
     # via
     #   httpx
     #   jupyter-server
-appnope==0.1.4
-    # via ipykernel
 argon2-cffi==23.1.0
     # via jupyter-server
 argon2-cffi-bindings==21.2.0
@@ -236,7 +234,7 @@ terminado==0.18.1
     #   jupyter-server-terminals
 tinycss2==1.2.1
     # via nbconvert
-tornado==6.4
+tornado==6.4.1
     # via
     #   ipykernel
     #   jupyter-client
